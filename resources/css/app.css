@@ -11,3 +11,66 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* ===== Unified Yellow/Accent Color Classes ===== */
+@layer components {
+    /* Primary Button - Yellow bg with black text (Logout, Sign In, Sign Up buttons) */
+    .btn-primary {
+        @apply bg-yellow-500 hover:bg-yellow-400 text-black font-bold shadow-sm transition-colors;
+    }
+
+    /* Input Focus Ring - Yellow focus ring for form inputs */
+    .input-focus {
+        @apply focus:ring-2 focus:ring-yellow-500 focus:border-transparent;
+    }
+
+    /* Accent Text - Yellow text for headings, links in dark mode */
+    .text-accent {
+        @apply text-yellow-600 dark:text-yellow-500;
+    }
+
+    /* Accent Text Hover */
+    .text-accent-hover {
+        @apply hover:text-yellow-500 dark:hover:text-yellow-400 transition duration-200;
+    }
+
+    /* ILight Accent Background - For icon circles and card accents */
+    .bg-accent-light {
+        @apply bg-yellow-100 dark:bg-yellow-500/10 text-yellow-600 dark:text-yellow-400;
+    }
+
+    /* Avatar Accent - Yellow bg circle for user avatars */
+    .avatar-accent {
+        @apply bg-yellow-500 text-black font-bold;
+    }
+
+    /* Badge Pending - Yellow badge for pending status */
+    .badge-pending {
+        @apply bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400;
+    }
+
+    /* Link Accent - Yellow colored links */
+    .link-accent {
+        @apply font-bold text-yellow-600 dark:text-yellow-500 hover:text-yellow-500 dark:hover:text-yellow-400 transition duration-200;
+    }
+
+    /* Sidebar Active Item */
+    .sidebar-active {
+        @apply bg-yellow-50 dark:bg-neutral-900 border-r-4 border-yellow-500 text-yellow-600 dark:text-yellow-400 font-bold;
+    }
+
+    /* Sidebar Hover */
+    .sidebar-hover {
+        @apply hover:bg-yellow-50 dark:hover:bg-neutral-900 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors;
+    }
+
+    /* Checkbox Accent */
+    .checkbox-accent {
+        @apply text-yellow-500 focus:ring-yellow-500;
+    }
+
+    /* Sidebar Dashboard Button - Same bg as Logout */
+    .sidebar-dashboard-btn {
+        @apply bg-yellow-500 hover:bg-yellow-400 text-black font-bold shadow-sm transition-colors rounded-lg;
+    }
+}
